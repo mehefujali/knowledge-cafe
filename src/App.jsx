@@ -6,9 +6,6 @@ import Nav from './Components/Nav/Nav'
 
 function App() {
   const [readingTime, setReadingTime] = useState(0)
-  const handelSetReadingTime = (time) => {
-    setReadingTime(readingTime + time)
-  }
   const [bookmark, setBookmark] = useState([])
   const handelSetBookmark = (blog) => {
     const isAlready = bookmark.find(book => book.id == blog.id)
@@ -16,6 +13,17 @@ function App() {
       const newBookmark = [...bookmark, blog]
       setBookmark(newBookmark)
     }
+  }
+
+  const handelRemoveBookmark = (id) => {
+    const removeFilterItem = bookmark.filter(book => book.id != id)
+    setBookmark(removeFilterItem)
+  }
+
+  const handelSetReadingTime = (blog) => {
+    handelRemoveBookmark(blog.id)
+
+    setReadingTime(readingTime + parseFloat(blog.readingTime))
   }
 
   return (
