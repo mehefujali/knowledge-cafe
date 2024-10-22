@@ -1,11 +1,14 @@
-
+import { useState } from 'react'
 import './App.css'
 import Blogs from './Components/Blogs/Blogs'
 import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Nav from './Components/Nav/Nav'
 
 function App() {
-
+  const [readingTime, setReadingTime] = useState(0)
+  const handelSetReadingTime = (time) => {
+    setReadingTime(readingTime + time)
+  }
 
   return (
     <>
@@ -15,8 +18,8 @@ function App() {
       </header>
       <div className=' border-b-gray-300 border'></div>
       <main className=' flex flex-col md:flex-row container mx-auto mt-12 '>
-        <Blogs></Blogs>
-        <Bookmarks></Bookmarks>
+        <Blogs handelSetReadingTime={handelSetReadingTime}></Blogs>
+        <Bookmarks readingTime={readingTime}></Bookmarks>
       </main>
     </>
   )
