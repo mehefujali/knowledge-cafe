@@ -1,5 +1,7 @@
 
 import './App.css'
+import Blogs from './Components/Blogs/Blogs'
+import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Nav from './Components/Nav/Nav'
 
 function App() {
@@ -9,7 +11,13 @@ function App() {
     <>
       <header className=' container mx-auto'>
         <Nav></Nav>
+
       </header>
+      <div className=' border-b-gray-300 border'></div>
+      <main className=' flex container mx-auto mt-12 '>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </main>
     </>
   )
 }

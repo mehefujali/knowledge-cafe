@@ -1,0 +1,142 @@
+[
+      {
+            "id": 1,
+            "courseThumbnail": "https://www.newdev.io/images/blog/javascript-functions-for-beginners/thumbnail.webp",
+            "title": "JavaScript for Beginners",
+            "authorName": "John Doe",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+            "postDate": "2024-10-01",
+            "readingTime": "5",
+            "hasTag": [
+                  "JavaScript",
+                  "Beginner",
+                  "Web Development"
+            ]
+      },
+      {
+            "id": 2,
+            "courseThumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png",
+            "title": "Mastering React",
+            "authorName": "Jane Smith",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/women/2.jpg",
+            "postDate": "2024-09-15",
+            "readingTime": "7 ",
+            "hasTag": [
+                  "React",
+                  "JavaScript",
+                  "Frontend"
+            ]
+      },
+      {
+            "id": 3,
+            "courseThumbnail": "https://codehalweb.com/wp-content/uploads/2023/09/thumbnail-1.jpg",
+            "title": "CSS Animations Guide",
+            "authorName": "Alice Johnson",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/women/3.jpg",
+            "postDate": "2024-08-10",
+            "readingTime": "6 ",
+            "hasTag": [
+                  "CSS",
+                  "Animations",
+                  "Frontend"
+            ]
+      },
+      {
+            "id": 4,
+            "courseThumbnail": "https://media.istockphoto.com/id/1356762790/video/web-development-concept.jpg?s=640x640&k=20&c=ONFGjyXNy8CqhTSmnEI2X7X1tEvHCBsT83imvtDgdCI=",
+            "title": "Intro to Web Development",
+            "authorName": "Michael Brown",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/men/4.jpg",
+            "postDate": "2024-07-20",
+            "readingTime": "4 ",
+            "hasTag": [
+                  "Web Development",
+                  "HTML",
+                  "CSS"
+            ]
+      },
+      {
+            "id": 5,
+            "courseThumbnail": "https://thecodex.me/static/52b74df4524162e8807bea5fb094d53c/ee604/Python_Thumbnail_b6e99c74df.png",
+            "title": "Learning Python Basics",
+            "authorName": "Emily Davis",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+            "postDate": "2024-06-30",
+            "readingTime": "8 ",
+            "hasTag": [
+                  "Python",
+                  "Beginner",
+                  "Programg"
+            ]
+      },
+      {
+            "id": 6,
+            "courseThumbnail": "https://media.geeksforgeeks.org/img-practice/prod/courses/345/Mobile/Content/javas_1724254620.png",
+            "title": "Advanced JavaScript Concepts",
+            "authorName": "Chris Green",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/men/6.jpg",
+            "postDate": "2024-06-10",
+            "readingTime": "10 ",
+            "hasTag": [
+                  "JavaScript",
+                  "Advanced",
+                  "Web Development"
+            ]
+      },
+      {
+            "id": 7,
+            "courseThumbnail": "https://i0.wp.com/aimactgrow.com/wp-content/uploads/2024/05/DALL%C2%B7E-2024-05-18-13.18.04-A-dynamic-and-futuristic-blog-banner-for-a-technology-blog-titled-Understanding-API.-This-design-should-showcase-elements-like-digital-networks-swi.webp?resize=800%2C445&ssl=1",
+            "title": "Understanding APIs",
+            "authorName": "Sophia Taylor",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/women/7.jpg",
+            "postDate": "2024-05-15",
+            "readingTime": "9 ",
+            "hasTag": [
+                  "API",
+                  "Backend",
+                  "Web Development"
+            ]
+      },
+      {
+            "id": 8,
+            "courseThumbnail": "https://cdn.gabrieleromanato.com/5c37214980b3/uploads/2018/09/nodejs.jpg",
+            "title": "Node.js Fundamentals",
+            "authorName": "Daniel Clark",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/men/8.jpg",
+            "postDate": "2024-04-25",
+            "readingTime": "12 ",
+            "hasTag": [
+                  "Node.js",
+                  "JavaScript",
+                  "Backend"
+            ]
+      },
+      {
+            "id": 9,
+            "courseThumbnail": "https://images.tutorialedge.net/thumbnails/building-serverless-apis-in-go.png",
+            "title": "Building REST APIs",
+            "authorName": "Jessica White",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/women/9.jpg",
+            "postDate": "2024-04-05",
+            "readingTime": "15 ",
+            "hasTag": [
+                  "API",
+                  "REST",
+                  "Backend"
+            ]
+      },
+      {
+            "id": 10,
+            "courseThumbnail": "https://edems.in/wp-content/uploads/2024/04/full-stack-web-development.jpg",
+            "title": "Full-Stack Web Development",
+            "authorName": "William Scott",
+            "authorImageAvatar": "https://randomuser.me/api/portraits/men/10.jpg",
+            "postDate": "2024-03-15",
+            "readingTime": "20 ",
+            "hasTag": [
+                  "Full-Stack",
+                  "JavaScript",
+                  "Web Development"
+            ]
+      }
+]
