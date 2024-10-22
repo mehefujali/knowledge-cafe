@@ -2,12 +2,13 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const Blog = ({ blog, handelSetReadingTime }) => {
+const Blog = ({ blog, handelSetReadingTime, handelSetBookmark }) => {
       const { title, courseThumbnail, authorName, authorImageAvatar, postDate, readingTime, hasTag } = blog
 
       const [bookmark, setBookmark] = useState(false)
       const handelBookmark = () => {
             setBookmark(true)
+            handelSetBookmark(blog)
       }
 
       return (
@@ -39,7 +40,8 @@ const Blog = ({ blog, handelSetReadingTime }) => {
 
 Blog.propTypes = {
       blog: PropTypes.object.isRequired,
-      handelSetReadingTime: PropTypes.func.isRequired
+      handelSetReadingTime: PropTypes.func.isRequired,
+      handelSetBookmark: PropTypes.func.isRequired
 }
 
 export default Blog;
