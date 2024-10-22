@@ -33,7 +33,12 @@ const Blog = ({ blog, handelSetReadingTime, handelSetBookmark }) => {
                   <p className=' flex gap-1 items-center'>
                         {hasTag.map((has, idx) => (<span key={idx}># {has}</span>))}
                   </p>
-                  <button onClick={() => handelSetReadingTime(blog)} className=' btn btn-sm w-fit bg-transparent border-violet-500 text-violet-500 hover:border-none hover:bg-violet-500 hover:text-white'>Mark as read</button>
+                  <button onClick={
+                        () => {
+                              handelSetReadingTime(blog)
+                              setBookmark(false)
+                        }
+                  } className=' btn btn-sm w-fit bg-transparent border-violet-500 text-violet-500 hover:border-none hover:bg-violet-500 hover:text-white'>Mark as read</button>
             </div>
       );
 };

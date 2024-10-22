@@ -14,7 +14,6 @@ function App() {
       setBookmark(newBookmark)
     }
   }
-
   const handelRemoveBookmark = (id) => {
     const removeFilterItem = bookmark.filter(book => book.id != id)
     setBookmark(removeFilterItem)
