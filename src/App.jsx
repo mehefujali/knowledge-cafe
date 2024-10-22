@@ -14,6 +14,11 @@ function App() {
       setBookmark(newBookmark)
     }
   }
+  const handleMakeUnRead = (blog) => {
+    console.log(blog);
+
+    setReadingTime(readingTime - parseFloat(blog.readingTime))
+  }
   const handelRemoveBookmark = (id) => {
     const removeFilterItem = bookmark.filter(book => book.id != id)
     setBookmark(removeFilterItem)
@@ -24,6 +29,7 @@ function App() {
 
     setReadingTime(readingTime + parseFloat(blog.readingTime))
   }
+
 
   return (
     <>
@@ -36,7 +42,8 @@ function App() {
         <Blogs
           handelSetReadingTime={handelSetReadingTime}
           handelSetBookmark={handelSetBookmark}
-
+          handleMakeUnRead={handleMakeUnRead}
+          handelRemoveBookmark={handelRemoveBookmark}
         ></Blogs>
         <Bookmarks readingTime={readingTime} bookmark={bookmark}></Bookmarks>
       </main>

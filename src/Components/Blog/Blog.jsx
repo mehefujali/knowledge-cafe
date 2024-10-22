@@ -2,13 +2,14 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const Blog = ({ blog, handelSetReadingTime, handelSetBookmark }) => {
+const Blog = ({ blog, handelSetReadingTime, handelSetBookmark, handleMakeUnRead, handelRemoveBookmark }) => {
       const { title, courseThumbnail, authorName, authorImageAvatar, postDate, readingTime, hasTag } = blog
-
+      const [readStatus, setReadStatus] = useState(false)
       const [bookmark, setBookmark] = useState(false)
       const handelBookmark = () => {
-            setBookmark(true)
-            handelSetBookmark(blog)
+            setBookmark(!bookmark)
+            bookmark || handelSetBookmark(blog)
+            bookmark && handelRemoveBookmark(blog.id)
       }
 
       return (
@@ -35,10 +36,12 @@ const Blog = ({ blog, handelSetReadingTime, handelSetBookmark }) => {
                   </p>
                   <button onClick={
                         () => {
-                              handelSetReadingTime(blog)
-                              setBookmark(false)
+                              readStatus || handelSetReadingTime(blog)
+                              readStatus || setBookmark(false)
+                              readStatus && handleMakeUnRead(blog)
+                              setReadStatus(!readStatus)
                         }
-                  } className=' btn btn-sm w-fit bg-transparent border-violet-500 text-violet-500 hover:border-none hover:bg-violet-500 hover:text-white'>Mark as read</button>
+                  } className={` btn btn-sm w-fit ${readStatus ? ' bg-violet-500' : 'bg-transparent'} border-violet-500 ${readStatus ? 'text-white' : 'text-violet-500'} hover:border-none hover:bg-violet-500 hover:text-white`}>{readStatus ? "Mark as unread" : "Mark as read"}</button>
             </div>
       );
 };
@@ -46,7 +49,9 @@ const Blog = ({ blog, handelSetReadingTime, handelSetBookmark }) => {
 Blog.propTypes = {
       blog: PropTypes.object.isRequired,
       handelSetReadingTime: PropTypes.func.isRequired,
-      handelSetBookmark: PropTypes.func.isRequired
+      handelSetBookmark: PropTypes.func.isRequired,
+      handleMakeUnRead: PropTypes.func.isRequired,
+      handelRemoveBookmark: PropTypes.func.isRequired,
 }
 
 export default Blog;
