@@ -14,7 +14,7 @@ const Blogs = ({ handelSetReadingTime, handelSetBookmark, handleMakeUnRead, hand
                         .then(data => setBlogs(data))
 
                   setLoderstatus(false)
-            }, 2000)
+            }, 1500)
       }, [])
 
 
@@ -37,7 +37,7 @@ const Blogs = ({ handelSetReadingTime, handelSetBookmark, handleMakeUnRead, hand
                                     }
                                     )
                               ) : (
-                                    <p>No blogs available.</p>
+                                    <p className=" text-green-500">Loded All data</p>
                               )
                         }
                   </div>
