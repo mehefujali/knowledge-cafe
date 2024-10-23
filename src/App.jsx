@@ -3,6 +3,7 @@ import './App.css'
 import Blogs from './Components/Blogs/Blogs'
 import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Nav from './Components/Nav/Nav'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const [readingTime, setReadingTime] = useState(0)
@@ -47,6 +48,9 @@ function App() {
         ></Blogs>
         <Bookmarks readingTime={readingTime} bookmark={bookmark}></Bookmarks>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   )
 }
