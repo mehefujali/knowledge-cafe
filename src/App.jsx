@@ -39,7 +39,7 @@ function App() {
 
       </header>
       <div className=' border-b-gray-300 border'></div>
-      <main className=' flex flex-col md:flex-row container mx-auto mt-12 '>
+      <main className=' flex flex-col md:flex-row container mx-auto mt-12  min-h-[90vh]'>
         <Blogs
           handelSetReadingTime={handelSetReadingTime}
           handelSetBookmark={handelSetBookmark}
